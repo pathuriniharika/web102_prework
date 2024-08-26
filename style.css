@@ -8,10 +8,15 @@ body {
 #tentacles {
     width: 50px;
 }
-
+#headerlogo{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
 .header {
     display: flex;
     background-color: lightblue;
+    justify-content: space-between;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -21,6 +26,9 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -72,4 +80,20 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    border-width: thick;
+}
+button:hover{
+    background-color:lightblue;
+}
+.navbar ul{
+    list-style-type: none;
+    color: black;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.navbar a:hover{
+    color: blue;
 }
